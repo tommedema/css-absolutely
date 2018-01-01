@@ -11,7 +11,7 @@ const isProtoless = require('url-is-protoless')
  * const absCss = require('css-absolutely', 'http://www.example.com/')
  * const input = `<div style="background-image: url('assets/icon.png');"></div>`
  * const expected = `<div style="background-image: url('http://www.example.com/assets/icon.png');"></div>`
- * const css = abs(input, baseUrl)
+ * const css = absCss(input, baseUrl)
  * console.log(css === expected) // true
  *
  * @returns {string} an example return type

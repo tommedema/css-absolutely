@@ -35,7 +35,7 @@ Pass in CSS from stylesheets or inline css tags and receive back CSS with all ur
 const absCss = require('css-absolutely', 'http://www.example.com/')
 const input = `<div style="background-image: url('assets/icon.png');"></div>`
 const expected = `<div style="background-image: url('http://www.example.com/assets/icon.png');"></div>`
-const css = abs(input, baseUrl)
+const css = absCss(input, baseUrl)
 console.log(css === expected) // true
 ```
 
